@@ -9,6 +9,7 @@ let usersRouter = require('./routes/users');
 
 let app = express();
 
+//for pdf
 app.get('/myResume', function(req, res) {
   res.sendFile(__dirname + "/public/Assets/Resume.pdf");
 });
